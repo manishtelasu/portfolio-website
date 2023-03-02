@@ -1,0 +1,535 @@
+@font-face {
+    font-family: anu;
+    src: url(Anurati-Regular.otf);
+}
+
+@font-face {
+    font-family: gilroy;
+    src: url(Radomir\ Tinkov\ -\ Gilroy-Light.otf);
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a {
+    font-family: gilroy;
+}
+
+
+header {
+
+    width: 100%;
+    height: 100vh;
+    background: url(), url(img/bg1.jpeg);
+    background-size: 40% 100%, cover;
+    background-position: right, center;
+    background-repeat: no-repeat;
+    /* clip-path: polygon(50% 0%, 100% 0, 100% 76%, 53% 100%, 51% 100%, 0 75%, 0 0); */
+    background-attachment: fixed;
+    z-index: 999;
+    position: absolute;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+}
+
+
+
+.menu {
+    margin-right: 100px;
+
+}
+
+.logo {
+    color: aliceblue;
+    font-size: 35px;
+    letter-spacing: 6px;
+    font-family: anu;
+    color: aqua;
+    margin-left: 30px;
+
+
+}
+
+.menu a {
+
+    color: aliceblue;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 20px;
+    text-transform: capitalize;
+    position: relative;
+
+}
+
+#manish{
+    position: absolute;
+    top:11%;
+    right: -8%;
+width: 32%;
+
+
+}
+
+.text {
+    color: aliceblue;
+    margin-top: 100px;
+    margin-left: 100px;
+    max-width: 450px;
+
+}
+
+.text h1 {
+    font-size: 50px;
+    margin: 10px 0px;
+
+}
+
+.text p {
+    font-size: 30px;
+    text-transform: capitalize;
+    padding-bottom: 20px;
+
+}
+
+
+.btn {
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 12px 25px;
+    cursor: pointer;
+    box-shadow: 2px 3px 5px grey;
+
+}
+
+
+
+#page2 {
+    padding: 100px 50px;
+}
+
+
+.section-info {
+    text-align: center;
+    text-transform: capitalize;
+
+}
+
+.section-info h1 {
+
+    font-size: 50px;
+
+}
+
+.section-info p {
+    text-transform: capitalize;
+    font-size: 26px;
+    color: red;
+
+}
+
+.about-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-left-col {
+    flex-basis: 40%;
+
+
+}
+
+.about-left-col img {
+    width: 80%;
+    padding: 50px;
+    background: rgba(255, 192, 203, 0.19);
+    box-shadow: 2px 3px 5px grey;
+}
+
+
+
+
+.about-right-col {
+    flex-basis: 50%;
+
+}
+
+.about-right-col h4 {
+    font-size: 25px;
+    text-transform: capitalize;
+
+}
+
+.about-right-col p {
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 25px;
+    line-height: 35px;
+}
+
+#page3 {
+    padding: 100px 50px;
+    color: aliceblue;
+    background: url(img/bg2.jpg);
+    background-attachment: fixed;
+}
+
+#pag3 .container{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container img{
+
+    width: 12%;
+padding-left: 20px;
+}
+
+
+
+
+
+
+
+
+#page4 {
+    padding: 100px 50px;
+}
+
+.service-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+
+
+}
+
+.service-box {
+    flex-basis: 30%;
+    text-align: center;
+    box-shadow: 2px 3px 5px gray;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.service-box img {
+    width: 100%;
+}
+
+.service-box:hover {
+    background: pink;
+    transition: 0.4s;
+    cursor: pointer;
+
+}
+
+#page5 {
+    padding: 100px 50px;
+    background: linear-gradient(160deg, pink 45%, white 0%);
+}
+
+.contact-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact-left-col {
+    flex-basis: 50%;
+}
+
+.contact-right-col {
+    flex-basis: 50%;
+
+}
+
+.contact-right-col form {
+    text-align: center;
+}
+
+.contact-right-col form>h3 {
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+.contact-right-col form input {
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.contact-right-col form textarea {
+    width: 60%;
+    padding: 10px;
+}
+
+footer {
+    background: pink;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+
+}
+
+#sidenav {
+    display: none;
+}
+
+i {
+    display: none;
+}
+
+footer h2 {
+    text-transform: capitalize;
+}
+
+.loader {
+    height:150vh;
+    width: 100vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    background:black;
+}
+
+.div {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#logo {
+
+    stroke-dasharray: 1608;
+    stroke-dashoffset: 1608;
+     animation: sin 14s ease;
+    stroke-width:7px;
+
+
+
+}
+
+@keyframes sin {
+    to {
+        stroke-dashoffset: 0%;
+    }
+}
+
+
+
+@media only screen and (max-width:770px) {
+    .menu a {
+        display: none;
+    }
+
+    .logo {
+
+        font-size: 5vw;
+    }
+
+    .text {
+        margin-left: 50px;
+    }
+
+
+
+    .about-left-col {
+        flex-basis: 100%;
+
+
+    }
+
+    .about-left-col img {
+        width: 80%;
+        padding: 50px;
+        background: rgba(255, 192, 203, 0.19);
+        box-shadow: 2px 3px 5px grey;
+    }
+
+
+
+
+
+    .about-right-col {
+        flex-basis: 100%;
+
+    }
+
+    .skills-left-col {
+        flex-basis: 100%;
+
+    }
+
+    .skills-right-col {
+        flex-basis: 100%;
+    }
+
+.container img{
+
+    width: 30%;
+padding: 10px;
+}
+
+
+    .service-box {
+        flex-basis: 100%;
+        margin-top: 20px;
+    }
+
+    .service-box img {
+        width: 60%;
+    }
+
+    .contact-left-col {
+        flex-basis: 100%;
+    }
+
+    .contact-right-col {
+
+        flex-basis: 100%;
+    }
+
+
+    #sidenav {
+        display: block;
+        position: absolute;
+        top: 15%;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        text-transform: capitalize;
+        font-size: 25px;
+
+    }
+
+    #sidenav li {
+        list-style: none;
+        margin-top: 30px;
+    }
+
+    #sidenav a {
+        text-decoration: none;
+        color: aliceblue;
+        font-weight: 600;
+        margin-left: 35vw;
+    }
+
+    #sidenav li a:hover {
+        background: black;
+        padding: 13px 20px;
+        transition: .5s;
+
+    }
+
+    i {
+        display: block;
+        position: absolute;
+        right: 5%;
+        top: 3%;
+        font-size: 40px;
+        color: aliceblue;
+    }
+
+
+    
+    
+    .section-info {
+        text-align: center;
+        text-transform: capitalize;
+    
+    }
+    
+    .section-info h1 {
+    
+        font-size: 50px;
+    
+    }
+    
+    .section-info p {
+        text-transform: capitalize;
+        font-size: 26px;
+        color: red;
+    
+    }
+    
+    .about-row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    
+
+    
+    .about-left-col img {
+        width: 80%;
+        padding: 50px;
+        background: rgba(255, 192, 203, 0.19);
+        box-shadow: 2px 3px 5px grey;
+    }
+    
+    
+    
+    
+    .about-right-col {
+        flex-basis: 50%;
+    
+    }
+    
+   header{
+
+    height: 85vh;
+   }
+
+
+    #manish{
+
+        display: none;
+    }
+
+}
